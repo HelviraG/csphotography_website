@@ -1,0 +1,63 @@
+.modal {
+    .modal-dialog {
+        z-index                                 : 10;
+        .modal-content {
+            height                              : 700px;
+            .modal-header {
+                background-color                : #1E90FF;
+                .modal-title {
+                    color                       : #FFFFFF;
+                    font-weight                 : bold;
+                    text-transform              : uppercase;
+                }
+            }
+            .modal-body {
+                color                           : #2F3542;
+                margin                          : 0 auto;
+                max-width                       : 90%;
+                overflow-y                      : auto;
+
+                &::-webkit-scrollbar {
+                    width: 10px;
+                  }
+                  
+                  /* Track */
+                  ::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 5px grey; 
+                    border-radius: 10px;
+                  }
+                   
+                  /* Handle */
+                &::-webkit-scrollbar-thumb {
+                    background: #a4b0be; 
+                    border-radius: 10px;
+                  }
+                  
+                  /* Handle on hover */
+                &::-webkit-scrollbar-thumb:hover {
+                    background: #57606f; 
+                  }
+
+                .paraph {
+                    margin-bottom               : 2em;
+                    h1 {
+                        font-weight             : bold;
+                        text-align              : center;
+                    }
+                    h2 {
+                        font-size               : 1.4em;
+                        font-weight             : bold;
+                        text-transform          : uppercase;
+                    }
+                    p {
+                        text-align              : justify;
+                    }
+                    .row {
+                        margin                  : 0 auto;
+                        max-width               : 80%;
+                    }
+                }
+            }
+        }
+    }
+}
